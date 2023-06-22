@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pinyon+Script&display=swap');
+
+.galada {
+    font-family: 'Galada', cursive;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider::after,
+.divider::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 40%;
+    content: '';
+    background: #cdd1d8;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.divider::before {
+    left: 0;
+}
+
+/* Lazy Load */
+.LazyLoad {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+}
